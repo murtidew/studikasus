@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-07 09:48:29 PM"/>
+        <attribute name="created" value="QVNVUztNVVJUSURFV0lPS1RBVkk7MjAyMy0wMy0wNzswOToyNjoxMSBQTTsyNzU2"/>
+        <attribute name="edited" value="QVNVUztNVVJUSURFV0lPS1RBVkk7MjAyMy0wMy0wNzswOTo0ODoyOSBQTTsxOzI4Nzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ang1, ang2, ang3, mid" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukkan ang ke-1&quot;" newline="True"/>
+            <input variable="ang1"/>
+            <output expression="&quot;masukkan ang ke-2&quot;" newline="True"/>
+            <input variable="ang2"/>
+            <output expression="&quot;masukkan ang ke-3&quot;" newline="True"/>
+            <input variable="ang3"/>
+            <if expression="ang1&gt;ang2">
+                <then>
+                    <if expression="ang2&gt;ang3">
+                        <then>
+                            <assign variable="mid" expression="ang2"/>
+                        </then>
+                        <else>
+                            <if expression="ang1&gt;ang3">
+                                <then>
+                                    <assign variable="mid" expression="ang3"/>
+                                </then>
+                                <else>
+                                    <assign variable="mid" expression="ang1"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="ang1&gt;ang3">
+                        <then>
+                            <assign variable="mid" expression="ang1"/>
+                        </then>
+                        <else>
+                            <if expression="ang2&gt;ang3">
+                                <then>
+                                    <assign variable="mid" expression="ang3"/>
+                                </then>
+                                <else>
+                                    <assign variable="mid" expression="ang2"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Bilangan dengan nilai tengah&quot; &amp;mid" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
